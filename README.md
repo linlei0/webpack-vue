@@ -277,27 +277,6 @@ export default store
 以上仅仅是基础版本，更多的配置需要自己配置webpack
 
 
-从输入url到页面解析的过程
-// 回答要点
-1.浏览器根据DNS服务器得到域名或ip
-2.向这个ip的机器发送http请求
-3.服务器收到，处理返回的http请求
-4.浏览器得到返回内容
-
-// 稍加分析
-1.例如在浏览器输入baidu.com，通过DNS解析得到百度的ip，然后浏览器向该ip发送http请去
-2.服务端收到http请求，然后通过计算，返回http请求，返回的内容其实就是一段HTML格式的字符串，因为只有HTML格式浏览器才能正确的解析，这是W3C的标准要求。
-
-// 渲染过程
-1.根据HTML结构生成DOM树
-2.根据CSS生产CSSOM
-3.将DOM和CSSOM整合成renderTree
-4.根据renderTree开始渲染和展示
-4.遇到<script>，会执行并阻塞渲染
-
-// 加以分析
-如果遇到<link  href=="..."/>
-
 
 
 
